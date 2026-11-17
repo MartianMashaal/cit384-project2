@@ -58,8 +58,7 @@ function clickedTeachButton() {
     // trick is complete. The replacement is a new element, not just a new label.
     // Documentation: https://api.jquery.com/replaceWith/
     $('.teach-button').replaceWith(
-        '<button class="teach-button learned" type="button" disabled>' +
-        '<strong>High five learned!</strong><span>One clever cat.</span></button>'
+        '<button class="teach-button" type="button" disabled>High five learned!</button>'
     );
 }
 

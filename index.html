@@ -3,68 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Take care of Nori, a little virtual cat.">
-    <title>GigaPet | Nori</title>
+    <title>GigaPet | CIT 384</title>
     <link rel="icon" href="images/nori.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <script src="vendor/jquery-3.7.1.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="page-header">
-        <p class="eyebrow">GigaPet</p>
-        <h1>Take care of Nori.</h1>
-        <p>Give a treat, play a little, or teach your cat a new trick.</p>
+    <header>
+        <h1>GigaPet</h1>
+        <p>CIT 384 - Project 2</p>
     </header>
 
     <main class="pet-card">
-        <section class="pet-image-container" aria-label="Your pet">
-            <div class="pet-room">
-                <img class="pet-image" src="images/nori.svg" width="320" height="320" alt="Nori, an orange cat wearing a green collar">
-            </div>
-            <div class="pet-response" role="status" aria-live="polite" aria-atomic="true">
-                <span class="speaker">Nori says</span>
-                <p class="pet-message">Hi! Is it snack time?</p>
-            </div>
-        </section>
+        <div class="pet-image-container">
+            <img class="pet-image" src="images/nori.svg" width="240" height="240" alt="Nori, an orange cat wearing a green collar">
+        </div>
 
         <section class="dashboard" aria-labelledby="pet-name">
-            <p class="eyebrow">Your cat</p>
             <h2 id="pet-name" class="name">Nori</h2>
-            <dl class="pet-stats">
-                <div>
-                    <dt>Weight</dt>
-                    <dd><span class="weight">12</span> <small>lb</small></dd>
-                </div>
-                <div>
-                    <dt>Happiness</dt>
-                    <dd><span class="happiness">50</span> <small>/ 100</small></dd>
-                </div>
-                <div>
-                    <dt>Tricks learned</dt>
-                    <dd class="tricks">0</dd>
-                </div>
-            </dl>
-
-            <div class="button-container" aria-label="Pet care actions">
-                <button class="treat-button" type="button">
-                    <strong>Treat</strong><span>Happier &amp; heavier</span>
-                </button>
-                <button class="play-button" type="button">
-                    <strong>Play</strong><span>Happier &amp; lighter</span>
-                </button>
-                <button class="exercise-button" type="button">
-                    <strong>Exercise</strong><span>Less happy &amp; lighter</span>
-                </button>
-                <button class="teach-button" type="button">
-                    <strong>Teach high five</strong><span>Learn one new trick</span>
-                </button>
+            <div class="pet-stats">
+                <p>Weight: <strong class="weight">12</strong> lb</p>
+                <p>Happiness: <strong class="happiness">50</strong> / 100</p>
+                <p>Tricks learned: <strong class="tricks">0</strong></p>
             </div>
-            <p class="care-note">A high five can be learned once. Refresh to start over.</p>
+
+            <div class="button-container">
+                <button class="treat-button" type="button">Treat</button>
+                <button class="play-button" type="button">Play</button>
+                <button class="exercise-button" type="button">Exercise</button>
+                <button class="teach-button" type="button">Teach high five</button>
+            </div>
+
+            <p class="pet-message" role="status" aria-live="polite">Hi! Is it snack time?</p>
+            <p class="care-note">Teach Nori a high five once. Refresh to start over.</p>
         </section>
     </main>
 
-    <footer>Mashaal Jan · CIT 384 · Project 2</footer>
-    <noscript><p class="noscript-note">Enable JavaScript to play with Nori.</p></noscript>
+    <footer>Mashaal Jan</footer>
+    <noscript><p>Enable JavaScript to play with Nori.</p></noscript>
 </body>
 </html>
